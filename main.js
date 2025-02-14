@@ -2,7 +2,7 @@ const prompt = require("prompt-sync")()
 
 console.log("FIREBURST: WARRIOR STRIKE");
 
-console.log(prompt(" TAPEZ SUR UNE TOUCHE POUR DÉMARRER "))
+console.log(prompt(" TAPEZ SUR ENTRER POUR DÉMARRER "))
 
 // Define a function for the attack feature 
 function attack(attacker, target, move) {
