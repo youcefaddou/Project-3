@@ -42,6 +42,7 @@ let computerattack = [
 let player = { name: "Guerrier du feu", hp: 80, moves: playerattack }
 let computer = { name: "Sombre Lutin", hp: 80, moves: computerattack }
 
+// This will show how much HP remaining
 function showStatus(fighter) {
     console.log(`${fighter.name}: ${fighter.hp} PV restants.`);
 
