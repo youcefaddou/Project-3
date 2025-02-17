@@ -49,13 +49,13 @@ function showStatus(fighter) {
 }
 //Define a function for the attacking player using while loop and conditions for attack prompts and managing errors
 function getPlayerMove() {
-    let validNum = false
+    let validnum = false
     let choice
-    while (!validNum) {
+    while (!validnum) {
         choice = prompt(" Choisisez votre attaque: 1 - Frappe Rapide // 2 - Soin Léger // 3 - Coup Puissant // 4 - Frappe Dévastatrice ")
         choice = parseInt(choice)
         if (choice >= 1 && choice <= 4) {
-            validNum = true
+            validnum = true
         } else {
             console.log(" Entrée invalide: Veuillez taper 1, 2, 3 ou 4 ");
 
@@ -66,8 +66,8 @@ function getPlayerMove() {
 while (player.hp > 0 && computer.hp > 0) {
     showStatus(player)
     showStatus(computer)
-    let playerMove = getPlayerMove()
-    attack(player, computer, playerMove)
+    let playermove = getPlayerMove()
+    attack(player, computer, playermove)
     if (computer.hp <= 0) {
         console.log(`${computer.name} est K.O. ${player.name} gagne !`)
         break
